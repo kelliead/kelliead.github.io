@@ -1,25 +1,99 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Kellie Dunn's HCDE 598 Digital Fabrication Page!</title>
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
-    </head> 
-    <body> 
+    </head>
+    <body>
 
         <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
+            <h1>A2: CAD Model + Fabricated Output!</h1>
+            <br>
+            by Kellie Dunn for HCDE 598
             <p>
-            <img src="red-panda.jpg" width=400></a>
+              Here are my finished and assembled Press Fit Kits, versions 2 and 3:<br>
+            <img src="A2assembled.jpg" width=800></a>
             </p>
             <p>
-            Here is all the documentation for assignment 2!
+              The first one (from last week) was made of 3.8mm cardboard. These new ones are 1.35mm (the black one) and 2.6mm (the green and brown one.)
+              <br>
+              Each kit still contains 16 each of two shapes.
+              <br>
+              <br>
+              I started by importing my previous AI file into Rhino, and using it as a template to make a new model.
+              <br>
+              When I tried to create the shapes in Grasshopper, I had problems with the Curve Array tool. Even after some research and getting help in office hours, I was still unable to make it work correctly in Grasshopper (I was able to model it fine in Rhino, but couldn't recreate it in Grasshopper...)
+            </p>
+            <p>
+              <img src="spock.gif" width="800"></a>
+            </p>
+            <p>
+              Ultimately, I ended up approximating the best I could with the Circular Array tool instead. It isn't exactly like my last model-- the angle and placement of the slots is slightly different-- but it's close enough to still work.
+            </p>
+            <p>
+              <img src="a2screenshot2.png" width="800"></a>
+            </p>
+            <p>
+              For each model, I used calipers to measure my cardboard dimensions and width in millimeters, and used the number slider in my Grasshopper model to resize the slots so they would fit snugly. By using Construct Domain, at the suggestion of helpful classmates on Slack, the width of the rectangles can be resized proportionately from the center.
+              <br>
+              <p>
+                <img src="a2screenshot3.png" width="800"></a>
+              </p>
+              For each size version, I baked my corrected shapes in Grasshopper into a layer in Rhino, selected the shapes in Rhino, and exported the selection as one .dxf file.
+              <br>
+              I opened each file in Illustrator, created an artboard the size of my cardboard, corrected the size of the image from Rhino when necessary, set the line width to 0.001, and copy-pasted the shapes until I had enough for my model plus a few extra.
+            </p>
+            <p>
+              <img src="a2screenshot1.png" width="800"></a>
+            </p>
+            <p>
+              On the laser cutter, I used the following settings for both models: <b>speed 40, power 90, freq 50.</b>
+              <br>
+
+            </p>
+            <p>
+                <img src="A2laser.jpg" width="800"></a>
+            </p>
+            <p>
+              Assembling the models!
+            </p>
+            <p>
+              <img src="A2pieces.jpg" width="800"></a>
+            </p>
+            <p>
+            <b>Documentation for Assignment 1:</b>
+            <br>
+            <a href=laserball135.ai>1.35mm Adobe Illustrator file</a>
+            <br>
+            <a href=laserball260.ai>2.60mm Adobe Illustrator file</a>
+            <br>
+            <a href=laserball135.dxf>1.35mm Rhino file</a>
+            <br>
+            <a href=laserball260.dxf>1.35mm Rhino file</a>
+            <br>
+            <a href=laserball.gh>Grasshopper file</a>
+            </p>
+            <p>
+              <b>Acknowledgements:</b>
+              <br>
+              Joshua for patient Grasshopper help!
+              <br>
+              Julie for moral support!
+              <br>
+              Lukas for Grasshopper help and laser cutter chat!
+              <br>
+              Elizabeth for Grasshopper help on Slack!
+            </p>
+            <p>
+              <a href="index.html">Return to index</a>
+            <br>
             </p>
         </div>
-        
+
     </body>
 </html>
