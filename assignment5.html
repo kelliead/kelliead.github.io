@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Kellie Dunn's HCDE 598 Digital Fabrication Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+
+        <div class="header">
+          <h1>A5: Subtractive Fabrication and CNC Milling</h1>
+          <br>
+          by Kellie Dunn for HCDE 598
+
+          <p>
+          Here is my finished project. It is milled out of FR1, a material for making printed circuit boards.
+          <br><br>
+          <img src="milled_box_finished.jpg" width=800></a>
+          <br><br>
+          The lid is secured with a rounded key that can be slid out to remove the lid.
+          <br><br>
+          <img src="milled_box_open.jpg" width=800></a>
+          <br>
+          </p>
+
+          <p>
+          I started my design in Onshape.
+          <br>
+          In sketch mode, I made a lot of use of the mirror tool to place my tabs and slots. When I had to come back later and resize things for tolerances, this was convenient because it automatically updated everything that had been mirrored. 3-point arc, sketch fillet,  construction lines, and measurements tools were also my BFFs here.
+          <br><br>
+          Here is my initial sketch in Onshape, before adding dogbones and fillets:
+          <br><br>
+          <img src="milled_box_sketch_begin.png" width="800"></a>
+          <br><br>
+          Here is the final sketch, with everything finished correctly:
+          <br><br>
+          <img src="milled_box_sketch_final.png" width="800"></a>
+          <br><br>
+          Here is a close up with those dogbones and fillets:
+          <br><br>
+          <img src="milled_box_sketch_zoom.jpg" width="800"></a>
+          <br>
+          </p>
+
+          <p>
+          I extruded my parts to the thickness of the FR1 material, put them in an assembly, and made mates to see if they fit together. My first version didn't work!
+          <br><br>
+          <img src="milled_box_wrong.png" width="800"></a>
+          <br><br>
+          Once I had everything sized correctly, it was looking good.
+          <br><br>
+          <img src="milled_box_assembly.png" width="800"></a>
+          <br><br>
+          I made fastened mates for the sides and bottom, and slider mates for the lid and key. I wish that Onshape had a feature that detected collision of solid parts instead of overlapping them. Perhaps there's a workaround for that, but I didn't figure it out this week. Still, it functions as designed in the virtual assembly:
+          <br><br>
+          <img src="milled_box_assembly.gif" width="800"></a>
+          <br>
+          </p>
+
+          <p>
+          For fabrication, I exported each part/surface to a DXF file, opened those in KiCad, and plotted them to GBR files.
+          <br><br>
+          <img src="milled_box_kicad.png" width="800"></a>
+          <br><br>
+          I couldn't install the Bantam Tools program on my laptop without updating MacOS, which I didn't want to do, so I put them on a USB drive and borrowed a laptop from The Mill to connect to the Bantam 3-axis desktop CNC machine.
+          <br><br>
+          <img src="milled_box_bantam.jpg" width="800"></a>
+          <br><br>
+          Some helpful classmates pointed out that each piece of FR1 is a slightly different thickness, so I had to measure each new piece that I put into the mill and check the settings to make sure they cut correctly. I had a few instances of Bantam warning me that some corner/dogbone feature was too small to cut, so I went back into my Onshape sketch and corrected the side and front pieces and redid the workflow from Onshape to KiCad to Bantam before cutting those. No problems with the actual tool (everything stuck to the workbed fine, no mishaps), but it took quite a while to get all of the pieces cut! I used the 1/32 inch flat end mill to make all of my cuts, but in hindsight I probably could have sized up for the outside cuts to save time.
+          <br><br>
+          <img src="milled_box_milling.gif" width="800"></a>
+          <br><br>
+          I can't be the only one who enjoys seeing the piece emerge from its blanket of sawdust when you vacuum it...
+          <br><br>
+          <img src="mill_vacuum.gif" width="800"></a>
+          <br>
+          </p>
+
+          <p>
+          Thanks to some good advice, some planning, and some luck, the tolerances for my joints are sufficiently tight to make a satisfying snap when you put them together. The slots for the key part on the lid are a little too snug to be comfortable to use, but it's so close to perfect that I can fix that with a little filing, rather than recut the piece. If I was making another box from the same file, I'd give the key a little more room to move.
+          <br><br>
+          <a href= youtube video > embed video </a>
+          </p>
+
+          <p>
+          <b>Documentation for Assignment 1:</b>
+          <br>
+          <a href=https://cad.onshape.com/documents/638aeb10fbea65c24357f70c/w/5c7ea12c3de22f44aeb545cf/e/1abdaa7e7d2801d4080e4dba> Onshape link </a>
+          <br>
+          <a href= .ai> Illustrator file </a>
+          <br>
+          <a href= .3dm> 3dm Rhino file </a>
+          <br>
+          <a href= .stl> STL file for 3D print </a>
+          <br>
+          <a href= .gh> Grasshopper file </a>
+          <br>
+          </p>
+
+          <p>
+          <b>Acknowledgements:</b>
+          <br>
+          Dave, for good advice about tolerances for optimal snap fit!
+          <br>
+          Cindy, for help with the mill!
+          <br>
+          Ping, for help with Onshape and milling camaraderie!
+          <br>
+          </p>
+
+          <p>
+          <a href="index.html"> Return to index </a>
+          <br><br>
+          </p>
+
+        </div>
+    </body>
+</html>
